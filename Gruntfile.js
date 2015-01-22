@@ -14,8 +14,8 @@ function loadConfig(path) {
 }
 
 var config = {
-  pkg: grunt.file.readJSON('package.json'),
   sshlogininfo: grunt.file.readJSON('sshlogininfo.json'), 
+  pkg: grunt.file.readJSON('package.json'),
   env: process.env
 };
 
@@ -27,8 +27,6 @@ grunt.util._.extend(config, loadConfig('./tasks/options/'));
 grunt.initConfig(config);
 
 require('load-grunt-tasks')(grunt);
-
-
   // Default task(s).
 grunt.registerTask('default', ['concat', 'uglify', 'watch']);
 };
