@@ -94,9 +94,9 @@ $('.trans').each(function(){$(this).height($(this).parent().outerHeight());});
 
 
 // Init Textillate
-$(function(){
-	$('.tlt').textillate();
-});
+// $(function(){
+// 	$('.tlt').textillate();
+// });
 
 
 
